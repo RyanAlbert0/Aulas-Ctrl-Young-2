@@ -26,7 +26,7 @@ body {
     background-color: white;
 
 
-    border-radius: 30px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,4 +88,9 @@ button:hover {
     cursor: pointer;
     width: 100%;    
 
+}
+
+input[type="radio"]
+{
+    accent-color: pink;
 }

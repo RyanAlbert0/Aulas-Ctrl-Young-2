@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+
+main{
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px black;
+    padding: 30px ;
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 25px
+    
+}
+
+.container-btn {
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+button {
+
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submit{
+
+    background-color: #FBAB7E;
+}
+
+.reset {
+
+    background-color: #F7CE68;
+}
+
+.submit:hover{
+
+    background-color: #c38662;
+}
+
+.reset:hover {
+
+    background-color: #a88c47;
+}
+
+input {
+
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+
+.container-inputs {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+
+    -webkit-appearance:none;
+
+}
+
+/* Tela Resultado */
+
+.label {
+
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.container-result {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a {
+
+    background-color: #F7CE68;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.container-voltar {
+
+    width: 100%;
+    background-color: red;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

@@ -7,7 +7,7 @@ const QUESTOES_QUIZ = [
     b: 'Coração',
     c: 'Presente',
     d: 'Robson',
-    correta: 'Flor',
+    correta: 'a',
 },
 {
     questao: "Qual a data do Dia das Mães?",
@@ -15,7 +15,7 @@ const QUESTOES_QUIZ = [
     b: 'Domingo de Maio',
     c: 'Primeiro de Maio',
     d: 'Onze de Setembro',
-    correta: 'Segundo Domingo de Maio',
+    correta: 'a',
 },
 {
     questao: "Em qual país foi comemorado pela primeira vez o Dia das Mães",
@@ -23,7 +23,7 @@ const QUESTOES_QUIZ = [
     b: 'Estados Unidos',
     c: 'França',
     d: 'Estônia',
-    correta: 'Estados Unidos',
+    correta: 'b', 
 },
 
 ]
@@ -47,7 +47,7 @@ carregar_quiz()
 
 function carregar_quiz()
 {
-    console.log(QUIZ_TITULO)
+    desmarcar_respostas()
     const INFO_QUESTAO = QUESTOES_QUIZ[questao_atual]
     QUIZ_TITULO.innerText = INFO_QUESTAO.questao
     ALTERNATIVA_A.innerText = INFO_QUESTAO.a
@@ -86,8 +86,24 @@ function clicado(){
         {
             carregar_quiz()
         }
+        else
+        {
+            QUIZ_CONTEINER.innerHTML = `<h1 class="reset_h1">Você acertou ${corretas}/${TOTAL_PERGUNTAS} questões </h1>
+            <button class="reset_btn" onclick='location.reload()'> RESETAR </buttton>
+            `
+            
+        }
+
         
     }
+}
+
+function desmarcar_respostas()
+{
+    RESPOSTAS.forEach((resp) => {
+        resp.checked = false
+    })
+
 }
 
 BOTAO.addEventListener('click', clicado)
