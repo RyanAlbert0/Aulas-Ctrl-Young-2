@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline:none;
+    font-family: "exo-2", sans-serif;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(191, 255, 255); 
+}
+
+main {
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 90%;
+}
+
+#container {
+
+    height: 700px;
+    width: 100%;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.container--over{
+
+    border: solid 10px black; 
+}
+
+button {
+
+    width: 100%;
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+#big {
+
+    font-size: 40px
+}
+
+.dropZone__input {
+
+    display: none;
+}
+
+.dropZone__thumb {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(146, 146, 146);
+    background-size: cover;
+    position: relative;
+}
+
+.dropZone__thumb::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+
+}
