@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline:none;
+    font-family: "exo-2", sans-serif;  
+    
+}
+
+body {
+    
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+button {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;   
+    font-size: 40px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: gray;
+    transition: background 0.3s ease-in-out;
+}
+
+span {
+
+    font-size: 400px;
+}
+
+.name-emoji{
+
+    font-size: 40px;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;   
+    font-size: 40px;
+    font-weight: bold;
+}

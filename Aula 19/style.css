@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline:none;
+    
+}
+
+body {
+    font-family: "exo-2", sans-serif;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px black;
+    padding: 30px;
+    text-align: center;
+}
+
+input[type='text'] {
+
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc
+
+}
+
+h1 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+
+    color: #aaa;
+}
+
+button {
+
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: rgb(99, 99, 99);
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #b6b6b6;
+    border: 1px solid #b6b6b6;
+    transition: background 0.3s ease-in-out;
+    color: rgb(88, 88, 88);
+
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+.red {
+
+    color: red
+}
+
+.yellow {
+
+    color: yellow
+}
+
+.aqua {
+    color: aqua
+}
